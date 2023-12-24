@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Training</title>
+    <link rel="icon" type="favicon" href="assets/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper flexmain">
+            <div class="left">
+                <img src="assets/images/webdevlogo.png" alt="logo">
+                <h1>For Individuals</h1>
+                <p class="webdesc">Start benefiting from the wellness experience. For companies looking on increasing productivity, and improving organization wellness.</p>
+                <p class="mobiledesc">Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.</p>
+            </div>
+            <div class="right">
+                <form action="" class="formres">
+                    <div class="flexbody">
+                        <div class="databox">
+                            <div class="firstname">
+                                <label for="First Name">First Name</label>
+                                <input type="text" placeholder="Tolu" name="First Name" id="First Name" required>
+                            </div>
+                        </div>
+                        <div class="databox">
+                            <label for="Last Name">Last Name</label>
+                            <input type="text" placeholder="" name="Last Name" id="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="flexbody">
+                        <div class="databox">
+                            <label for="gender">Gender</label>
+                            <select name="gender" id="gender" required>
+                                <option value="Select Gender" hidden>Select Here</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="undisclosed">Undisclosed</option>
+                            </select>
+                        </div>
+                        <div class="databox">
+                            <label for="date of birth">Date Of Birth</label>
+                            <input type="date" placeholder="Select Here" name="date of birth" id="date of birth" required>
+                        </div>
+                    </div>
+                    <div class="flexbody">
+                        <div class="databox">
+                            <label for="Weight (KG)">Weight (KG)</label>
+                            <input type="number" placeholder="Enter Weight" name="weight" id="weight" required>
+                        </div>
+                        <div class="databox">
+                            <label for="Height (CM)">Height (CM)</label>
+                            <input type="number" placeholder="Enter Height" name="height" id="height" required>
+                        </div>
+                    </div>
+                    <div class="databox">
+                        <label for="Activity Level">Activity Level</label>
+                            <select name="Activity Level" id="Activity Level" required>
+                                <option value="Select Activity Level" hidden>Select Here</option>
+                                <option value="Beginner">Beginner</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                    </div>
+                    <div class="databox">
+                        <label for="Password">Password</label>
+                            <input type="password" required>
+                    </div>
+                    <button class="button"><strong>Register</strong></button>
+                    <footer class="footer">By clicking Register, you agree to our <a href="">Terms of Use</a> and our <a href="">Privacy Policy</a></footer>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

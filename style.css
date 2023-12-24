@@ -1,0 +1,121 @@
+body{
+    background-color: rgba(46, 196, 182, .04);
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+}
+.wrapper{
+    margin: 0 auto;
+    inline-size: 100%;
+    max-inline-size: 1110px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.flexmain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    width: 40%;
+    font-size: .9rem;
+    margin-top: -150px;
+}   
+.left img{
+    width: 65px;
+    height: 65px;
+    margin-bottom: 25px;
+}
+.left h1{
+    margin-top: px;
+    margin-bottom: 15px;
+}
+.webdesc{
+    color: rgb(128, 128, 128);
+}
+.mobiledesc{
+    display: none;
+}
+.right{
+    width: 55%;
+    background-color: rgb(255, 255, 255);
+    padding: 2em;
+    border-radius: 7px;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+}
+.databox{
+    width: 100%;
+    margin-top: 20px;
+}
+.databox label{
+    font-weight: bold;
+}
+.databox input, select{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    font-size: .9rem;
+    margin-top: 8px;
+    border: 1px solid rgba(240, 240, 240, 1);
+    border-radius: 3px;
+    padding: 0 15px;
+    color: rgb(125, 125, 125)
+}
+.databox input:focus, select:focus{
+    border: 1px solid rgba(46, 196, 182, 1);
+}
+.firstname input{
+    border: 1px solid rgba(46, 196, 182, 1);
+}
+.firstname ::placeholder{
+    color: rgb(0, 0, 0);
+}
+.flexbody{
+    display: flex;
+    column-gap: 15px;
+}
+.button{
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(46, 196, 182, 1);
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 18px;
+}
+.footer{
+    text-align: center;
+}
+.footer a{
+    color: rgba(46, 196, 182, 1);
+}
+/* responsive */
+@media screen and (min-width: 350px) and (max-width: 699px){
+    .wrapper{
+        flex-direction: column;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+        position: relative;
+        padding: 0 2em;
+    }
+    .left, .right{
+        width: 100%;
+    }
+    .left{
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    .flexbody{
+        flex-wrap: wrap;
+    }
+    .webdesc{
+        display: none;
+    }
+    .mobiledesc{
+        display: contents;
+    }
+}
